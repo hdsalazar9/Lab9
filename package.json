@@ -1,0 +1,17 @@
+{
+  "name": "lab9",
+  "version": "1.0.0",
+  "description": "Modificaciones al Lab8 para hacerlo con BD persistente y una vista html",
+  "main": "blog-post-config.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.5.4",
+    "uuid": "^3.3.2"
+  }
+}

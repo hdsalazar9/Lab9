@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <title> Lab 9 HTML </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1> Lab 9 - Blog List </h1>
+  </header>
+  <main>
+    <h2> List of existing Blogs (GET) </h2>
+    <ul style="max-height: 400px; overflow: scroll;" class="listOfBlogs">
+    </ul>
+    <hr>
+    <h2> List of existing Blogs by author name (GET by name) </h2>
+    <form id="listedByName" class="listByName">
+      <fieldset>
+        <legend>
+          Enter author name:
+        </legend>
+        <input class="inputForm" type="text" id="authorNameSearch"><br>
+        <input class="buttonForm" type="submit" value="Author name" id="searchName">
+      </fieldset>
+    </form>
+    <ul class="listOfBlogs-searchByName">
+    </ul>
+    <hr>
+
+    <h2> Register a new Blog: (Post) </h2>
+    <form class="postForm">
+      <fieldset>
+        <legend>
+          Add a new Blog:
+        </legend>
+        Title:<br>
+        <input class="inputForm" type="text" id="post-form-title"><br>
+        Content:<br>
+        <input class="inputForm" type="text" id="post-form-content"><br>
+        Author: <br>
+        <input class="inputForm" type="text" id="post-form-author"><br>
+        Publish date: <br>
+        <input class="inputForm" type="date" id="post-form-date"><br>
+        <br>
+        <input class="buttonForm" type="submit" value="Add Blog" id="post-form-button">
+      </fieldset>
+    </form>
+    <ul id="post-form-response">
+    </ul>
+    <hr>
+
+    <h2> Delete a Blog: (Delete) </h2>
+    <form class="deleteForm">
+      <fieldset>
+        <legend> Delete a Blog by its id: </legend>
+        Id: <br>
+        <input class="inputForm" type="text" id="delete-form-id"><br>
+        <input class="buttonForm" type="submit" value="Delete Blog" id="delete-form-button">
+      </fieldset>
+    </form>
+    <div class="delete-form-response">
+    </div>
+    <hr>
+
+    <h2> Update a Blog: (PUT) </h2>
+    <form class="updateForm">
+      <fieldset>
+        <legend> Update a blog by its id and the defined values: </legend>
+        Id: <br>
+        <input class="inputForm" type="text" id="update-form-id"><br>
+        <div style="border: 3px solid black; margin: 6px;"> </div>
+        Title:<br>
+        <input class="inputForm" type="text" id="update-form-title"><br>
+        Content:<br>
+        <input class="inputForm" type="text" id="update-form-content"><br>
+        Author: <br>
+        <input class="inputForm" type="text" id="update-form-author"><br>
+        Publish date: <br>
+        <input class="inputForm" type="date" id="update-form-date"><br>
+        <input class="buttonForm" type="submit" value="Update Blog" id="update-form-button">
+      </fieldset>
+    </form>
+    <div class="update-form-response">
+    </div>
+  </main>
+
+  <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
